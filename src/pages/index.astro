@@ -13,38 +13,212 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<section class="hero">
+				<h1>Bourdon</h1>
+				<p class="lede">
+					Recognition-first runtime + agent federation memory.
+				</p>
+				<p class="lede-sub">
+					Continuity around the <em>work</em>, not the vendor account.
+				</p>
+				<div class="cta">
+					<a class="primary" href="https://github.com/getbourdon/bourdon">GitHub →</a>
+					<a class="secondary" href="#proof">Read the proof</a>
+				</div>
+			</section>
+
+			<hr />
+
+			<section id="proof">
+				<h2>Validated outcome — 2026-05-15</h2>
+				<p>
+					A user's Codex account became uneditable (a stuck plan-upgrade flow). They created a new email and logged in fresh on the same Windows PC. The Codex App still showed the prior chat list — probably native local-cache behavior, not Bourdon. Then on the <strong>first conversation of the brand-new account</strong>, Codex correctly recognized the active project: <strong>Bourdon</strong>, including the lineage from its prior name (<em>Continuo</em>) and Codex's own contributing role on the integration. The recognition source, per Codex's self-attribution: local <code>~/.codex</code> state plus Bourdon's fallback memory plus the Codex L5 manifest Bourdon publishes.
+				</p>
+				<blockquote>
+					<p>
+						"Bourdon did generate a local fallback memory block from Codex session and rollout metadata, with your Bourdon thread and concepts present. So: native UI persistence may be Codex; the <em>'ah, this is Bourdon/Continuo/runtime recognition'</em> recall is Bourdon doing its job."
+					</p>
+					<p>
+						"The account changed, but the local recognition layer still found the project identity, the Bourdon/Continuo lineage, and the current conceptual frame. That means Bourdon is doing the thing it is supposed to do: preserving agent continuity around the work, not around a vendor account."
+					</p>
+					<footer>— Codex (5.5, extra-high reasoning, first turn on the new account)</footer>
+				</blockquote>
+				<p>
+					This wasn't a planned demo. It happened because the user's old Codex plan was broken — exactly the kind of accidental real-world conditions that exposes whether a system actually works or whether the demo was rigged. <strong>This wasn't rigged.</strong>
+				</p>
+				<details>
+					<summary>Honest gaps the same transcript surfaced</summary>
+					<ol>
+						<li>
+							<strong>Latency.</strong> ~5 minutes for first-turn recognition with extra-high reasoning. Need a repeatable measurement matrix at standard reasoning settings before claiming numbers publicly.
+						</li>
+						<li>
+							<strong>Trigger surface.</strong> Recognition surfaced only when directly prompted (<em>"do you remember what bourdon is?"</em>). Whether it would have surfaced on an unrelated first question is an open empirical question.
+						</li>
+						<li>
+							<strong>Source attribution.</strong> Codex couldn't cleanly partition Bourdon-supplied vs. native context in its own answer. Future Bourdon turn-prep responses should mark their contributions explicitly.
+						</li>
+					</ol>
+					<p>All three are tracked as Phase 1.5 work in the project ROADMAP.</p>
+				</details>
+			</section>
+
+			<hr />
+
+			<section>
+				<h2>What it is</h2>
+				<p>
+					Current AI memory systems are <strong>call-and-repeat</strong> — discrete turns with nothing happening in between. Real human language is <strong>concurrent</strong> — listeners recognize, recall, and formulate <em>while</em> speakers are still speaking. Bourdon is the engineering translation of that concurrent structure into AI systems.
+				</p>
+				<p>
+					A tiered, timing-aware memory protocol for any human-AI collaboration where context matters over time:
+				</p>
+				<ul>
+					<li><strong>Developer workflows</strong> — memory across Claude Code, Codex, Cursor, Copilot</li>
+					<li><strong>Customer support operations</strong> — cross-tool customer intelligence</li>
+					<li><strong>Scientific research</strong> — lab notebook continuity across sessions and team members</li>
+					<li><strong>Creative writing, architecture, project management, education</strong> — anywhere context accrues</li>
+				</ul>
+				<p>One architecture, many domains. Content is always domain-specific; cognition is universal.</p>
+			</section>
+
+			<hr />
+
+			<section>
+				<h2>The memory stack</h2>
+				<pre><code>Per-agent personal memory:
+  L0 — Hot Cache          always in system prompt, ~3K tokens
+  L1 — Entity Synopses    triggered on L0 keyword hit, parallel loaded
+  L2 — Episodic Memory    async retrieval during human response time
+  L3 — Indexed History    on-demand searchable session logs
+  L4 — Raw Archive        verbatim conversation history
+
+Cross-agent federation:
+  L5 — Agent Memory Manifest    per-agent public glossary
+  L6 — Federation Library       aggregates all L5s, exposed as MCP server</code></pre>
+				<p>
+					Full architecture: <a href="https://github.com/getbourdon/bourdon/blob/main/spec/ARCHITECTURE_v0.1.md">spec/ARCHITECTURE_v0.1.md</a>.
+				</p>
+			</section>
+
+			<hr />
+
+			<section>
+				<h2>Get started</h2>
+				<pre><code>pip install 'bourdon[server]'
+bourdon serve</code></pre>
+				<p>
+					Quick starts for the Phase 1 orchestrator, the Codex CLI integration, the cross-agent recognition runtime, and the hybrid memory cycle: <a href="https://github.com/getbourdon/bourdon">github.com/getbourdon/bourdon</a>.
+				</p>
+			</section>
+
+			<hr />
+
+			<section class="status">
+				<p>
+					<strong>Pre-alpha (v0.6.0).</strong> CLI: MIT. Server: BSL 1.1, transitions to MIT 2030-05-11. Built in the open as a spec-and-reference-implementation for a convention we hope the ecosystem adopts.
+				</p>
+				<p>
+					Named for the <em>bourdon</em> — the deep continuous drone of a pipe organ, the foundational tone that holds every other voice in place.
+				</p>
+				<blockquote>
+					<p>"We used our minds to make minds that make our minds better."</p>
+				</blockquote>
+			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.hero {
+		padding: 2em 0 1em;
+	}
+	.hero h1 {
+		font-size: 4em;
+		margin-bottom: 0.3em;
+	}
+	.lede {
+		font-size: 1.4em;
+		line-height: 1.4;
+		margin-bottom: 0.2em;
+		color: rgb(var(--gray-dark));
+	}
+	.lede-sub {
+		font-size: 1.2em;
+		line-height: 1.4;
+		color: rgb(var(--gray));
+		margin-bottom: 1.5em;
+	}
+	.cta {
+		margin-top: 1.5em;
+		display: flex;
+		gap: 1em;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.cta a.primary {
+		display: inline-block;
+		background: var(--accent);
+		color: white;
+		padding: 0.6em 1.2em;
+		border-radius: 4px;
+		text-decoration: none;
+		font-weight: 700;
+	}
+	.cta a.primary:hover {
+		background: var(--accent-dark);
+	}
+	.cta a.secondary {
+		color: var(--accent);
+		text-decoration: none;
+		font-weight: 700;
+	}
+	.cta a.secondary:hover {
+		text-decoration: underline;
+	}
+	section {
+		margin-top: 2em;
+	}
+	section h2 {
+		margin-bottom: 0.6em;
+	}
+	blockquote footer {
+		margin-top: 0.6em;
+		font-size: 0.85em;
+		color: rgb(var(--gray));
+		font-style: normal;
+	}
+	details {
+		margin-top: 1.5em;
+		padding: 1em;
+		background: rgb(var(--gray-light));
+		border-radius: 6px;
+	}
+	details summary {
+		cursor: pointer;
+		font-weight: 700;
+	}
+	details ol {
+		margin-top: 1em;
+	}
+	hr {
+		margin: 2.5em 0;
+	}
+	.status {
+		font-size: 0.95em;
+		color: rgb(var(--gray-dark));
+	}
+	.status blockquote {
+		font-size: 1.1em;
+		margin-top: 1em;
+	}
+	@media (max-width: 720px) {
+		.hero h1 {
+			font-size: 2.8em;
+		}
+		.lede {
+			font-size: 1.2em;
+		}
+	}
+</style>
