@@ -2,11 +2,11 @@
 	"name": "bourdon-web",
 	"description": "blog.bourdon.ai — field notes from building Bourdon (recognition-first runtime + agent federation memory).",
 	"dependencies": {
-		"@astrojs/cloudflare": "13.5.1",
-		"@astrojs/mdx": "5.0.6",
+		"@astrojs/cloudflare": "14.0.2",
+		"@astrojs/mdx": "7.0.0",
 		"@astrojs/rss": "4.0.14",
 		"@astrojs/sitemap": "3.6.1",
-		"astro": "6.3.3",
+		"astro": "7.0.4",
 		"typescript": "5.9.3"
 	},
 	"devDependencies": {
